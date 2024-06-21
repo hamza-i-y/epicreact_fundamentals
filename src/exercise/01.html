@@ -1,6 +1,32 @@
 <!-- Basic JavaScript-rendered Hello World -->
 <!-- http://localhost:3000/isolated/exercise/01.html -->
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exericse 1</title>
+  </head>
+  <body>
+    <!-- exercise 1 -->
+    <!-- <div id="root"></div> -->
+    <script>
+      const element = document.createElement('div')
+      element.textContent = 'Hello World'
+      //Exercise 1
+      //   root.append(element)
+
+      //exercise 2
+      const root = document.createElement('div')
+      //   root.setAttribute("id", "root")
+      root.id = 'root'
+      root.append(element)
+      document.body.append(root)
+    </script>
+  </body>
+</html>
+
 <!-- 🐨 Create (in HTML) a <body> with a <div> with the id of "root" -->
 <!-- 🐨 Then create a <script type="module"> for your JavaScript -->
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attributes -->
